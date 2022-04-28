@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- to be filled by the Python script -->
+<h1>{{ the_title }}</h1>
+
+<!-- note how items from the "static" folder are linked -->
+
+<a href="https://www.reddit.com/r/relationship_advice/comments/k2dzzt/i_think_my_boyfriend_isnt_attracted_to_me_anymore/">
+<img border="0"  src="{{ url_for('static', filename='images/redpost.png') }}"> </a>
+<p>From GPT: I think my boyfriend is very entitled.  I think I’ve tried to make him feel attached to me.  I don’t know if I’m falling out of love.
+  I don’t know if I’m falling out of love.  I don’t know if I think I’ve been cheating
+  or just doesn’t talk enough.  I really need help on everything  fwb. I don’t know if I should. I don’t know if I don’t</p>
+
+
+<ul>
+  <li><a href="{{ url_for('gpt') }}">Try it out</a></li>
+  <li><a href="{{ url_for('thankyou') }}">Thank yous</a></li>
+</ul>
+
+<p> I came into the project with two goals, 1. Learn the basics of and apply natural language processing to a
+  problem and 2., Never have to write a title again. I learned a lot and feel more comfortable thinking about
+  what natural language processing can easily do, but unfortunately I am still stuck writing titles for now.
+</p>
+<p><i>  <center> Ive Known Ive Seen Butch Butch At Pride </center> </i> </p>
+
+<p>My irritation with titles is the same as my computers. They don’t necessarily make sense. Why is <i> "The Lady in Red"</i>  a good title for <i>"Meet the talent behind the red:
+  Anastasia Khoo, Marketing Director for the Human Rights Campaign. As the Supreme Court heard oral arguments in the cases challenging Prop 8 and DOMA social media outlets were covered
+  in red in support of marriage equality."</i>? I can explain why that title is good, it’s catchy, and short, but I
+  can’t explain how to get to it from the description. And that problem keeps my GPT-2-Simple model from giving me the results I wanted.
+  The titles were realistic and catchy, but not at all related to the context I put in. </p>
+
+<p> <i> <center> Description: A 22-year-old transgender woman has been charged with tampering with evidence in an effort
+  to catch and punish the attempted tampering with evidence under the Fairness Act</center> </i> </p>
+<p> <i>  <center> Lady Gaga Wows Homeless LGBT Youth With Surprise Performance </center> </i> </p>
+
+<p>I still learned a lot about BERT and GPT, and created a functioning, if not useful,
+  title generator that made realistic titles. </p>
+
+<p> <i>  <center> Sandra Valls: A Priestess With Comedy </center> </i> </p>
+
+<p>Well, mostly realistic</p>
+
+<p> <i>  <center> Cuba Inspires Names Candis Cayne As Honorary LGBT Ambassador To Cuba</center> </i> </p>
+
+<p>But, the title generation gave me an idea. What if I went from title to content, instead of content to title. I decided to go
+  with Reddit and the relationship_advice subreddit, because I wanted to practice scraping my own data, and I thought it would be funny.
+  Not only did I work more with text generation and learn how to scrape from Reddit, I also created a model that worked (and was funny).</p>
+<p> <i>  <center> I think my girlfriend is cheating on me</center> </i> </p>
+<p> <i>  <center> I have a friend who I know is nice to me. She seems like a nice guy and I help her feel less insecure. I know that cheating
+  on her seems inevitable but I’m not sure if she can move on from it. I don’t know if I’m right to feel guilty about cheating. I just want to
+  know if I’m hurting her feelings. I don’t know if she’s good enough or not.  I want to know if I need to break up with her. Like maybe she’s
+  a bitch and she just doesn’t want to talk about it.  Or just she just doesn’t want to talk about it and I don’t know what to do. I have
+  feelings for her and I want to know if she isn’t trying to gain what I’m doing to hurt herself or if she even wants to be friends. I don’t
+  know if I’m doing everything just to hurt her or if she thinks that we are not together and that I’m trying to gained anything by doing what
+  I’m doing.  If she thinks that we are going to break up</center> </i> </p>
+
+<p>Because text generation is more forgiving than title generation (especially in r/relationship_advice), the text not only made sense, it
+  also stayed fairly consistent. The one issue I ran into was subreddit specific language and the model had trouble with some context
+  modifying keywords. Things like (m 24) and (f 37) sometimes stumped the program, so I occasionally got weird things like My (F20) ... I (M29).
+  In addition, things like “Left me on read” were interpreted as “broke up with me” by the model, despite the “read”. But I think both of these
+  stem from a lack of training time and data, and would eventually be learned by the program if I had more resources.</p>
+
+<p> <i>  <center> I (F) ...  I (M) ... my grandmother (21F) household (68M) </center> </i> </p>
+
+<p>Overall, I am happy with what I created and very happy with what I learned. I created multiple NLP models with differing degrees of success
+  and better learned what type of problems are challenging for computers and what details stump them.</p>
+
+{% endblock %}

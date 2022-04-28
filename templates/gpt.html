@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ the_title }} {% endblock %}
+
+{% block body %}
+
+<form action="{{ url_for("gpt")}}" method="post">
+<label for="context">Title:</label>
+<input type="text" id="context" name="context" placeholder="context">
+<button type="submit">Learn your problem</button>
+
+<p><b>{{title}}</b></p>
+
+<p>{{text}}</p>
+
+  <li><a href="{{ url_for('index') }}">Homepage</a></li>
+  <li><a href="{{ url_for('thankyou') }}">Thank yous</a></li>
+</ul>
+
+{% endblock %}

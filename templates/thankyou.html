@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h1>{{ the_title }}</h1>
+
+<img alt="" src="{{ url_for('static', filename='images/pic.png') }}">
+
+<ul>
+  <li><a href="{{ url_for('gpt') }}">Try it out</a></li>
+  <li><a href="{{ url_for('index') }}">Home page</a></li>
+</ul>
+
+<p> I want to thank my mentor,
+  <a href="https://www.linkedin.com/in/alyssa-smith-2463b7a0/" target="_blank">Alyssa Smith</a>,
+  without whom I wouldn’t have been able to do this
+  and Out In Tech for organizing it. Alyssa was really helpful and always made time to meet with
+  me and answer my questions. She was great at explaining concepts and pointing me in the right direction
+  throughout the problem and helping me debug code. As my model would say:
+</p>
+
+<p><i>  <center> Thank you for any help i have about needing some advice or perspective
+  I have on having a conversation that involves my ex- vs.
+  not. Both of them had very bad careers and ended up being bandits. u Do too better than that</center> </i> </p>
+
+
+<p>I am also grateful for
+  <a href="https://outintech.com/"
+       target="_blank">Out In Tech</a>
+  for organizing this program. It was great to have a structured timeline to motivate me to learn.
+  I work best with deadlines and this mentorship program gave me that.</p>
+
+<p>Code: </p>
+<p><a href="https://github.com/minimaxir/gpt-2-simple" target="_blank">GPT_2_Simple</a></p>
+<p><a href="https://github.com/macloo/basic-flask-app" target="_blank">The Code for This Website</a></p>
+<p> <a href="https://stackoverflow.com/questions/35586984/praw-how-to-filter-search-results-based-on-created-date"
+       target="_blank">How I scraped data from Reddit</a></p>
+
+<p>My Original <a href="http://data.huffingtonpost.com/" target="_blank">Huffington Post Data</a></p>
+{% endblock %}
